@@ -28,11 +28,11 @@
   <!-- body -->
   <g font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="15" xml:space="preserve">
     <text x="28" y="82" fill="#59e3b3">$</text>
-    <text x="46" y="82" fill="#e6e9f0">python3 pocketdex.py index ~/Projects/budget-buddy</text>
+    <text x="46" y="82" fill="#e6e9f0">python3 pocketdex.py index ~/Projects/my-app</text>
 
     <text x="28" y="112" fill="#8b93a7">{</text>
     <text x="46" y="136" fill="#8b93a7">"files_indexed": <tspan fill="#ffd479">34</tspan>,  "chunks": <tspan fill="#ffd479">218</tspan>,  "seconds": <tspan fill="#ffd479">0.06</tspan></text>
-    <text x="46" y="160" fill="#8b93a7">"db": "~/Projects/pocketdex/data/projects/budget-buddy-3f2a1b9c.db"</text>
+    <text x="46" y="160" fill="#8b93a7">"db": "~/Projects/pocketdex/data/projects/my-app-3f2a1b9c.db"</text>
     <text x="28" y="184" fill="#8b93a7">}</text>
 
     <text x="28" y="222" fill="#59e3b3">$</text>
