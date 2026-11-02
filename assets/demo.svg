@@ -1,0 +1,57 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="920" height="470" viewBox="0 0 920 470" role="img" aria-label="PocketDex terminal demo">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#12151c"/>
+      <stop offset="1" stop-color="#0b0d12"/>
+    </linearGradient>
+    <linearGradient id="accent" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#7c9cff"/>
+      <stop offset="1" stop-color="#59e3b3"/>
+    </linearGradient>
+    <filter id="glow" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="6" result="blur"/>
+      <feMerge><feMergeNode in="blur"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+  </defs>
+
+  <rect width="920" height="470" rx="16" fill="url(#bg)"/>
+  <rect x="1" y="1" width="918" height="468" rx="15.5" fill="none" stroke="#262b36"/>
+
+  <!-- title bar -->
+  <rect x="1" y="1" width="918" height="44" rx="15.5" fill="#171b23"/>
+  <rect x="1" y="30" width="918" height="15" fill="#171b23"/>
+  <circle cx="24" cy="23" r="6" fill="#ff5f57"/>
+  <circle cx="44" cy="23" r="6" fill="#febc2e"/>
+  <circle cx="64" cy="23" r="6" fill="#28c840"/>
+  <text x="460" y="28" text-anchor="middle" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="12" fill="#8b93a7">pocketdex — local code index over MCP</text>
+
+  <!-- body -->
+  <g font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="15" xml:space="preserve">
+    <text x="28" y="82" fill="#59e3b3">$</text>
+    <text x="46" y="82" fill="#e6e9f0">python3 pocketdex.py index ~/Projects/budget-buddy</text>
+
+    <text x="28" y="112" fill="#8b93a7">{</text>
+    <text x="46" y="136" fill="#8b93a7">"files_indexed": <tspan fill="#ffd479">34</tspan>,  "chunks": <tspan fill="#ffd479">218</tspan>,  "seconds": <tspan fill="#ffd479">0.06</tspan></text>
+    <text x="46" y="160" fill="#8b93a7">"db": "~/Projects/pocketdex/data/projects/budget-buddy-3f2a1b9c.db"</text>
+    <text x="28" y="184" fill="#8b93a7">}</text>
+
+    <text x="28" y="222" fill="#59e3b3">$</text>
+    <text x="46" y="222" fill="#e6e9f0">python3 pocketdex.py search "badge rules" --limit 2</text>
+
+    <text x="28" y="252" fill="#7c9cff">app.py</text>
+    <text x="95" y="252" fill="#8b93a7">197-236</text>
+    <text x="180" y="252" fill="#59e3b3">score 4.53</text>
+    <text x="28" y="276" fill="#8b93a7">…if <tspan fill="#e6e9f0">score</tspan> &gt;= rule["threshold"]: award(<tspan fill="#e6e9f0">badge</tspan>)…</text>
+
+    <text x="28" y="310" fill="#7c9cff">tests/test_badges.py</text>
+    <text x="206" y="310" fill="#8b93a7">12-51</text>
+    <text x="270" y="310" fill="#59e3b3">score 2.91</text>
+    <text x="28" y="334" fill="#8b93a7">…assert <tspan fill="#e6e9f0">badge</tspan>["name"] == "First Steps"…</text>
+
+    <!-- payoff -->
+    <rect x="24" y="366" width="872" height="76" rx="10" fill="#111a17" stroke="#1f3a31"/>
+    <text x="44" y="396" font-size="14" fill="#59e3b3">≈ 69 tokens returned</text>
+    <text x="44" y="422" font-size="14" fill="#8b93a7">vs ≈ 4,442 tokens to open app.py — and 5 files an agent might try first</text>
+    <text x="876" y="410" text-anchor="end" font-size="13" fill="#5d6578">one file · no deps · one DB per project</text>
+  </g>
+</svg>

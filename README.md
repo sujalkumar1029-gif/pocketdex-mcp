@@ -10,6 +10,8 @@ dependencies, no background server, no vectors — just SQLite FTS5.
 Ask an agent *"where are badge rules calculated?"* and it gets a file path, a
 line range, and a short highlighted snippet instead of opening five files.
 
+![PocketDex terminal demo](assets/demo.svg)
+
 ## Why
 
 An agent exploring a repo opens file after file, and every file costs context.
@@ -72,6 +74,12 @@ There is nothing to install. Clone the repo and run it:
 git clone https://github.com/sujalkumar1029-gif/pocketdex-mcp.git
 cd pocketdex-mcp
 python3 pocketdex.py --help
+```
+
+Or run it straight from Git with `uv`:
+
+```bash
+uvx --from git+https://github.com/sujalkumar1029-gif/pocketdex-mcp pocketdex index ~/Projects/my-app
 ```
 
 Requirements: Python 3.10+ and SQLite built with FTS5 (standard in CPython
@@ -172,6 +180,8 @@ real MCP stdio handshake (initialize → tools/list → tools/call).
 
 Early (0.x). The MCP contract and CLI are stable; internals may change.
 Issues and pull requests are welcome.
+
+If PocketDex saves you tokens, a star helps other agent builders find it.
 
 ## License
 
