@@ -10,7 +10,7 @@ dependencies, no background server, no vectors — just SQLite FTS5.
 Ask an agent *"where are badge rules calculated?"* and it gets a file path, a
 line range, and a short highlighted snippet instead of opening five files.
 
-![PocketDex terminal demo](assets/demo.svg)
+![PocketDex terminal demo](assets/demo.gif)
 
 ## Why
 
