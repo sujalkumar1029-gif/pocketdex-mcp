@@ -3,6 +3,7 @@
 [![tests](https://github.com/sujalkumar1029-gif/pocketdex-mcp/actions/workflows/test.yml/badge.svg)](https://github.com/sujalkumar1029-gif/pocketdex-mcp/actions/workflows/test.yml)
 [![license](https://img.shields.io/badge/license-MIT-blue.svg)](LICENSE)
 [![python](https://img.shields.io/badge/python-3.10%2B-blue.svg)](https://www.python.org/)
+[![Glama](https://glama.ai/mcp/servers/sujalkumar1029-gif/pocketdex-mcp/badges/score.svg)](https://glama.ai/mcp/servers/sujalkumar1029-gif/pocketdex-mcp)
 
 A tiny local code index for AI agents, served over MCP. One Python file, no
 dependencies, no background server, no vectors — just SQLite FTS5.
@@ -84,6 +85,22 @@ uvx --from git+https://github.com/sujalkumar1029-gif/pocketdex-mcp pocketdex ind
 
 Requirements: Python 3.10+ and SQLite built with FTS5 (standard in CPython
 builds).
+
+## Docker
+
+Build the stdio server into a small image:
+
+```bash
+docker build -t pocketdex-mcp .
+docker run --rm -i pocketdex-mcp
+```
+
+The index lives under `/app/data` inside the container. To keep it between
+runs, use a named volume:
+
+```bash
+docker run --rm -i -v pocketdex-data:/app/data pocketdex-mcp
+```
 
 ## Quick start
 
